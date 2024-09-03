@@ -140,7 +140,7 @@ jobs:
           echo "hostap_debug_flags=-d" >> $GITHUB_ENV
 
       - name: Download lib
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: ${{ matrix.config.build_id }}
           path: build-dir
